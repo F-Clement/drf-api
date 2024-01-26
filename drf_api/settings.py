@@ -22,7 +22,7 @@ CLOUDINARY_STORAGE = {
 }
 
 MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediacloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-^%v0uxn1+w!5c)sjzaszim^+a%gfy0d)j^1b57fx93iwee4uqq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-f-clement-drf-api-jo0zz5pzr0.us2.codeanyapp.com']
 
 
 # Application definition
