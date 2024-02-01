@@ -35,11 +35,4 @@ class ProfileDetail(APIView):
         serializer = ProfileSerializer(profile, context={'request': request})
         return Response(serializer.data)
 
-    def put(self, request, pk):
-        profile = self.get_object(pk)
-        serializer = ProfileSerializer(
-            profile, data=request.data, context={'request': request})
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
