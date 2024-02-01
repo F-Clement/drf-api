@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-^%v0uxn1+w!5c)sjzaszim^+a%gfy0d)j^1b57fx93iwee4uqq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-f-clement-drf-api-jo0zz5pzr0.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-f-clement-drf-api-jo0zz5pzr0.us2.codeanyapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'profiles',
+    'posts'
 ]
 
 MIDDLEWARE = [
